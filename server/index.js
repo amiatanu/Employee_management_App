@@ -12,7 +12,7 @@ dotenv.config();
 
 const app = express();
 const corsOptions = {
-  origin: "http://localhost:3001",
+  origin: `http://localhost:${process.env.REACT_APP_PORT}`,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };
